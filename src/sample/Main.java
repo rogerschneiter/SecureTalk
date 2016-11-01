@@ -29,6 +29,7 @@ public class Main extends Application {
         primaryStage.show();
 
         // Check if admin in a group which requires new vigenere phrase
+
     }
 
 
