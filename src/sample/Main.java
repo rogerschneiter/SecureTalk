@@ -7,20 +7,22 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // add samle.fxml as main FXML file for primaryStage
+        // add sample.fxml as main FXML file for primaryStage
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("SecureTalk V1.0");
 
         // create primaryScene and add style.css as stylesheet for primaryScene
         Scene primaryScene = new Scene(root, 600, 400);
-        primaryScene.getStylesheets().add(getClass().getResource("\\res\\style.css").toExternalForm());
+        primaryScene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
         // set icon for primaryStage
-        Image icon = new Image(getClass().getResourceAsStream("\\res\\icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("icon.png"));
         primaryStage.getIcons().add(icon);
 
         // setScene and resizable false
