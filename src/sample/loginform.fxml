@@ -10,32 +10,32 @@
 
 <Pane maxHeight="353.0" maxWidth="280.0" minHeight="353.0" minWidth="280.0" prefHeight="353.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label layoutX="68.0" layoutY="46.0" text="Authentification">
+      <Label layoutX="68.0" layoutY="40.0" text="Authentification">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="49.0" layoutY="101.0" promptText="Username">
+      <TextField fx:id="usernameForLogin" layoutX="49.0" layoutY="90.0" promptText="Username">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="49.0" layoutY="161.0" promptText="Password">
+      <PasswordField fx:id="passwordForLogin" layoutX="49.0" layoutY="145.0" promptText="Password">
          <font>
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button layoutX="97.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Login">
+      <Button onAction="#loginUserClick" layoutX="97.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Login">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label layoutX="44.0" layoutY="283.0" text="No account? Register">
+      <Label layoutX="44.0" layoutY="307.0" text="No account? Register">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="194.0" layoutY="279.0" onAction="#register" text="here!">
+      <Hyperlink layoutX="194.0" layoutY="303.0" onAction="#register" text="here!">
          <font>
             <Font size="14.0" />
          </font>

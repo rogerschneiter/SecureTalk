@@ -9,27 +9,27 @@
 
 <Pane maxHeight="353.0" maxWidth="280.0" minHeight="353.0" minWidth="280.0" prefHeight="353.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label layoutX="85.0" layoutY="46.0" text="Registration">
+      <Label layoutX="85.0" layoutY="40.0" text="Registration">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="49.0" layoutY="101.0" promptText="Username">
+      <TextField fx:id="username" layoutX="49.0" layoutY="90.0" promptText="Username">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="49.0" layoutY="161.0" promptText="Password">
+      <PasswordField fx:id="password1" layoutX="49.0" layoutY="145.0" promptText="Password">
          <font>
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button layoutX="98.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Register">
+      <Button layoutX="98.0" layoutY="255.0" mnemonicParsing="false" onAction="#validateRegistration" prefHeight="25.0" prefWidth="86.0" text="Register">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <PasswordField layoutX="49.0" layoutY="221.0" prefHeight="26.0" prefWidth="184.0" promptText="Confirm Password">
+      <PasswordField fx:id="password2" layoutX="49.0" layoutY="200.0" prefHeight="26.0" prefWidth="184.0" promptText="Confirm Password">
          <font>
             <Font size="14.0" />
          </font>
